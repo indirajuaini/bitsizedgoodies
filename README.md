@@ -21,22 +21,5 @@ Instructions:
 4.  Activate it on click event.
 
 
-DIV sample:
-<a href="#" id="pop-me">Pop my DIV</a>
-<div id="my-div">hello</div>
-
-Style DIV with CSS:
-#my-div{padding:30px;background:#ccc;display:none;width:400px}
-
-Script:
-<script>
-$(document).ready(function() {
-  $('#pop-me').click(function() {
-    $('#my-div').goodies_popme();
-  });
-});
-</script>
-
-
 Download and try running the sample script.  I hope this simple effort will be of benefit to you.  Thanks!
 
