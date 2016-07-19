@@ -1,5 +1,5 @@
-bitsizedgoodies is a simple popup plugin. It will pop up any DIV container you have, automatically centerering the pop 
-up on your screen.  The plugin adds a close (x) button for when you wish to close the popup.
+bitsizedgoodies is a simple popup plugin. It will pop up any DIV container you have, automatically centering the pop 
+up on your screen based on its current viewport size.  The plugin adds a close (x) button for when you wish to close the popup.
 
 The idea was to create a simple plugin with frequently-used, standard UI features packaged in one plugin that I can use in my day-to-day development.  Nothing too complicated.  For now, only the popup feature is active. 
 
