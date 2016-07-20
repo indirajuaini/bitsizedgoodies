@@ -24,29 +24,27 @@
 
 	$.fn.goodies_popme = function (option)
 	{	
-		if(option === undefined) {
-			var topDisplacement = parseInt($(this).css('padding-top').replace("px", "")) + 10,
-				leftDisplacement = parseInt($(this).css('padding-left').replace("px", "")) + 10 ;
+		var topDisplacement = parseInt($(this).css('padding-top').replace("px", "")) + 10,
+			leftDisplacement = parseInt($(this).css('padding-left').replace("px", "")) + 10 ;
 			
 		
-			$(document.body).append("<div id='mg-backdrop'></div>");
-			$(this).prepend("<div id='mg-pop-me-close'><div id='mg-pop-me-close-inside'></div></div>");
-			$(this).css({
-				'position'	: 'fixed',
-				'z-index' 	: '999'
-			});		
-			$('#mg-pop-me-close-inside').css({
-				'top'  : '-' + topDisplacement + 'px',
-				'left' : '-' + leftDisplacement + 'px'
-			});	
-			$(this).centerMe();				
-			$(this).fadeIn(300);
+		$(document.body).append("<div id='mg-backdrop'></div>");
+		$(this).prepend("<div id='mg-pop-me-close'><div id='mg-pop-me-close-inside'></div></div>");
+		$(this).css({
+			'position'	: 'fixed',
+			'z-index' 	: '999'
+		});		
+		$('#mg-pop-me-close-inside').css({
+			'top'  : '-' + topDisplacement + 'px',
+			'left' : '-' + leftDisplacement + 'px'
+		});	
+		$(this).centerMe();				
+		$(this).fadeIn(300);
 			
-			$(this).delegate('#mg-pop-me-close', 'click', function() {
-				$(this).parent().hide();
-				$('#mg-backdrop, #mg-pop-me-close').remove();
-			});
-		}
+		$(this).delegate('#mg-pop-me-close', 'click', function() {
+			$(this).parent().hide();
+			$('#mg-backdrop, #mg-pop-me-close').remove();
+		});
 	}		
 	
 }) (jQuery);
